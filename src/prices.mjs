@@ -89,7 +89,6 @@ function createApp(database) {
       let holiday_temporal = Temporal.PlainDate.from(row.holiday)
       if (
         //date.toTemporalInstant().toZonedDateTimeISO("UTC").getISOFields().isoYear === holiday_temporal.getISOFields().isoYear &&
-        //date.toTemporalInstant().toZonedDateTimeISO("UTC").getISOFields().isoMonth - 1 === holiday.getMonth() &&
         Temporal.PlainDate.compare(foo_date, holiday_temporal) == 0
       ) {
         return true;
