@@ -86,13 +86,13 @@ function createApp(database) {
     return date.dayOfWeek === 1;
   }
 
-  function isHoliday(date2) {
+  function isHoliday(date) {
     const holidays = database.getHolidays();
     for (let row of holidays) {
       let holiday = parsePlainDate(row.holiday);
       Temporal.PlainDateTime
       if (
-        date2 && date2.equals(holiday)
+        date && date.equals(holiday)
       ) {
         return true;
       }
