@@ -89,7 +89,7 @@ function createApp(database) {
       let holiday = parsePlainDate(row.holiday);
       if (
         date &&
-        date.equals(holiday_foo)
+        date.equals(holiday)
       ) {
         return true;
       }
