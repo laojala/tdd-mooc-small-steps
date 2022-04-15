@@ -86,7 +86,7 @@ function createApp(database) {
     return date.dayOfWeek === 1;
   }
 
-  function isHoliday(date) {
+  function isHoliday(date, date2) {
     const holidays = database.getHolidays();
     for (let row of holidays) {
       let holiday = new Date(row.holiday);
