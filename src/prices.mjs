@@ -94,8 +94,7 @@ function createApp(database) {
       Temporal.PlainDateTime
       if (
         date &&
-        date2.equals(holiday2) &&
-        date.getMonth() === holiday.getMonth() && date.getDate() === holiday.getDate()
+        date2.equals(holiday2) && date.getMonth() === holiday.getMonth() && date.getDate() === holiday.getDate()
       ) {
         return true;
       }
