@@ -96,4 +96,5 @@ function createApp(database) {
 }
 
 function convert(date) {}
+
 export { createApp };
