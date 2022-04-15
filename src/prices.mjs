@@ -88,6 +88,7 @@ function createApp(database) {
       let holiday = new Date(row.holiday);
       let holiday_temporal = Temporal.PlainDate.from(row.holiday)
       if (
+        Temporal.PlainDate.compare(foo_date, holiday_temporal) == 0 &&
         //date.toTemporalInstant().toZonedDateTimeISO("UTC").toPlainDate() &&
         date.toTemporalInstant().toZonedDateTimeISO("UTC").getISOFields().isoYear === holiday_temporal.getISOFields().isoYear &&
         date.toTemporalInstant().toZonedDateTimeISO("UTC").getISOFields().isoMonth - 1 === holiday.getMonth() &&
