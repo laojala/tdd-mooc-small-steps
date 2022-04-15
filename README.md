@@ -1,3 +1,11 @@
+# Excercise comments
+
+This repository contains 3 branches that are the submission:
+
+* [round1_experimenting](https://github.com/laojala/tdd-mooc-small-steps/tree/round1_experimenting) - experimenting with refactoring mostly using [ conversion propagation](#example-conversion-propagation) approach
+* [round2_parallel_change](https://github.com/laojala/tdd-mooc-small-steps/tree/round2_parallel_change) - refactoring using [parallel change](#example-parallel-change) approach
+* [round3_TCR_challenge](https://github.com/laojala/tdd-mooc-small-steps/tree/round3_TCR_challenge) - refactoring only one line at the line (except the final commit where I removed unused function all at one)
+
 # [TDD MOOC](https://tdd.mooc.fi): Small, safe steps
 
 This is a refactoring exercise to practise doing small, safe steps.
