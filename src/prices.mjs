@@ -94,7 +94,7 @@ function createApp(database) {
       Temporal.PlainDateTime
       if (
         date &&
-        date2.equals(holiday2)
+        date2.equals(holiday)
       ) {
         return true;
       }
