@@ -92,7 +92,7 @@ function createApp(database) {
         //date.toTemporalInstant().toZonedDateTimeISO("UTC").toPlainDate() &&
         //date.toTemporalInstant().toZonedDateTimeISO("UTC").getISOFields().isoYear === holiday_temporal.getISOFields().isoYear &&
         //date.toTemporalInstant().toZonedDateTimeISO("UTC").getISOFields().isoMonth - 1 === holiday.getMonth() &&
-        date.toTemporalInstant().toZonedDateTimeISO("UTC").getISOFields().isoDay === holiday_temporal.getISOFields().isoDay
+        Temporal.PlainDate.compare(foo_date, holiday_temporal) == 0
       ) {
         return true;
       }
