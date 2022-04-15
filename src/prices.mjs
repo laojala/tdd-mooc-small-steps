@@ -22,14 +22,10 @@ function createApp(database) {
     const cost = calculateCost(age, type, date, baseCost);
     res.json({ cost });
   });
-
-  function parseDate(dateString) {
-    if (dateString) {
-      return new Date(dateString);
-    }
-  }
   
-  function parsePlainDate(dateString) { return (dateString ? Temporal.PlainDate.from(dateString) : dateString); }
+  function parsePlainDate(dateString) { 
+    return (dateString ? Temporal.PlainDate.from(dateString) : dateString); 
+  }
 
   function calculateCost(age, type, date, baseCost) {
     if (type === "night") {
