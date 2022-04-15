@@ -92,7 +92,7 @@ function createApp(database) {
       let holiday = parsePlainDate(row.holiday);
       Temporal.PlainDateTime
       if (
-        date &&
+        date2 &&
         date2.equals(holiday)
       ) {
         return true;
