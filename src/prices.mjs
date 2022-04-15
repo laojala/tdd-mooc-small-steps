@@ -88,7 +88,7 @@ function createApp(database) {
       if (
         //date.toTemporalInstant().toZonedDateTimeISO("UTC").toPlainDate() &&
         //date.toTemporalInstant().toZonedDateTimeISO("UTC").getISOFields().isoYear === holiday.getFullYear() &&
-        date.toTemporalInstant().toZonedDateTimeISO("UTC").getISOFields().isoMonth - 1 === holiday.getMonth() &&
+        date.toTemporalInstant().toZonedDateTimeISO("UTC").getISOFields().isoMonth - 1 === holiday_temporal.getISOFields().isoMonth -1 &&
         date.toTemporalInstant().toZonedDateTimeISO("UTC").getISOFields().isoDay === holiday_temporal.getISOFields().isoDay
       ) {
         return true;
