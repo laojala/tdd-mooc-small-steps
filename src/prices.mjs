@@ -84,7 +84,7 @@ function createApp(database) {
     for (let row of holidays) {
       let holiday = Temporal.PlainDate.from(row.holiday)
       if (
-        Temporal.PlainDate.compare(date.toTemporalInstant().toZonedDateTimeISO("UTC").toPlainDate(), holiday) == 0
+        Temporal.PlainDate.compare(convert(date), holiday) == 0
       ) {
         return true;
       }
