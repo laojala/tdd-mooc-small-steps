@@ -95,6 +95,6 @@ function createApp(database) {
   return app;
 }
 
-function convert(date) {return date.toTemporalInstant().toZonedDateTimeISO("UTC").toPlainDate()}
+function convert(date) {return date.toTemporalInstant().toZonedDateTimeISO("UTC")}
 
 export { createApp };
