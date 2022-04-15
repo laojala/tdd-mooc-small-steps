@@ -81,7 +81,7 @@ function createApp(database) {
  
   
   function isHoliday(date) {
-    let foo_date = Temporal.PlainDateTime.from(date.toTemporalInstant().toZonedDateTimeISO("UTC"))
+    //let foo_date = Temporal.PlainDateTime.from(date.toTemporalInstant().toZonedDateTimeISO("UTC"))
     const holidays = database.getHolidays();
     for (let row of holidays) {
       let holiday = new Date(row.holiday);
