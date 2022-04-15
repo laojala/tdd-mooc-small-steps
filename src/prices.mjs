@@ -36,7 +36,7 @@ function createApp(database) {
     if (type === "night") {
       return calculateCostForNightTicket(age, baseCost);
     } else {
-      return calculateCostForDayTicket(age, date, baseCost, date_foo);
+      return calculateCostForDayTicket(age, date_foo, baseCost, date_foo);
     }
   }
 
