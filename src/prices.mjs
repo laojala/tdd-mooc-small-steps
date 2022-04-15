@@ -89,7 +89,6 @@ function createApp(database) {
       let holiday_foo = parsePlainDate(row.holiday);
       if (
         date_foo &&
-        date.getFullYear() === holiday.getFullYear() &&
         date_foo.equals(holiday_foo)
       ) {
         return true;
